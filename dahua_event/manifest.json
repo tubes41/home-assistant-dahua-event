@@ -2,7 +2,7 @@
   "domain": "dahua_event",
   "name": "dahua event",
   "documentation": "https://github.com/SaWey/home-assistant-dahua-event",
-  "dependencies": ["event"],
+  "dependencies": [],
   "codeowners": ["@SaWey"],
   "requirements": ["pycurl>=7"],
 }
