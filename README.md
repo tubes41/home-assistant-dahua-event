@@ -19,7 +19,7 @@ For a device, the only required config item is the host, all other values defaul
   If you are using Windows:
   * Download the zip file and extract the folder inside to your custom_components folder.
 
-```
+```yaml
 dahua_event:
 #
   - name: Laundry
@@ -41,7 +41,7 @@ dahua_event:
 
 You can also assign names to channels, if multiple channels are reported by a device.
 Just add them at the end of your dahua_event device config:
-``` 
+``` yaml
 channels:
     - number: 0
       name: Kitchen
