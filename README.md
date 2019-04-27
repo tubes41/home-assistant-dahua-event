@@ -1,4 +1,7 @@
 # Dahua event listener for home-assistant (http://home-assistant.io)
+REQUIREMENTS = ['pycurl>=7']
+
+sudo apt install libcurl4-openssl-dev libssl-dev
 
 Code borrowed from https://github.com/johnnyletrois/dahua-watch and made into a home-assistant component
 
@@ -9,15 +12,23 @@ You can work with multiple camera's or NVR's
 For a device, the only required config item is the host, all other values default to the ones below.
 
 ```
-#Dahua event listener
 dahua_event:
-  name: Garage
-  protocol: http
-  host: 192.168.1.123
-  port: 80
-  user: admin
-  password: admin
-  events: VideoMotion,CrossLineDetection,AlarmLocal,VideoLoss,VideoBlind
+#
+  - name: Laundry
+    protocol: http
+    host: !secret laundry_cam_ip
+    port: 80
+    user: !secret nvr_username
+    password: !secret nvr_passsword
+    events: CrossLineDetection,CrossRegionDetection,LeftDetection,TakenAwayDetection,FaceDetection,AudioMutation,AudioAnomaly
+#
+  - name: kitchen
+    protocol: http
+    host: !secret kitchen_cam_ip
+    port: 80
+    user: !secret nvr_username
+    password: !secret nvr_passsword
+    events: CrossLineDetection,CrossRegionDetection,LeftDetection,TakenAwayDetection,FaceDetection,AudioMutation,AudioAnomaly
 ``` 
 
 You can also assign names to channels, if multiple channels are reported by a device.
