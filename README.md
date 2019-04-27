@@ -1,9 +1,13 @@
 # Dahua event listener for home-assistant (http://home-assistant.io)
-REQUIREMENTS = ['pycurl>=7']
 
+
+
+1. Install following
 ```bash
 sudo apt install libcurl4-openssl-dev libssl-dev
-
+```
+2. Install pycurl on home assistant env
+```bash
 pip3 install pycurl
 ```
 Code borrowed from https://github.com/johnnyletrois/dahua-watch and made into a home-assistant component
