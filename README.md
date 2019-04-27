@@ -10,6 +10,14 @@ The component depends on pycurl, if that won't load, check your dependencies.
 
 You can work with multiple camera's or NVR's
 For a device, the only required config item is the host, all other values default to the ones below.
+------------
+
+  * Clone or copy the root of the repository into `<config dir>/custom_components/dahua_event`
+
+```bash
+
+  If you are using Windows:
+  * Download the zip file and extract the folder inside to your custom_components folder.
 
 ```
 dahua_event:
