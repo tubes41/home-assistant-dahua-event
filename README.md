@@ -19,6 +19,7 @@ For a device, the only required config item is the host, all other values defaul
   If you are using Windows:
   * Download the zip file and extract the folder inside to your custom_components folder.
 
+```
 ```yaml
 dahua_event:
 #
